@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profesor de Tenis de Mesa - Clases Profesionales</title>
+    <meta name="description" content="Clases personalizadas de tenis de mesa para todos los niveles. Aprende con un profesor de educación física especializado.">
+    <!-- Agregando Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <div class="logo">
+                    <img src="/public/icon.png" alt="">
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#logros" class="nav-link">Logros</a></li>
+                <li><a href="#galeria" class="nav-link">Galería</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Clases Profesionales de Tenis de Mesa</h1>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn btn-primary">Contactar Ahora</a>
+                <a href="#sobre-mi" class="btn btn-secondary">Conocer Más</a>
+            </div>
+        </div>
+        <div class="video-container">
+             <video autoplay muted loop playsinline>
+            <source src="public/video.mp4" type="video/mp4">
+            Tu navegador no soporta video en HTML5.
+        s</video>
+  </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre Mí</h2>
+                    <p class="about-description" data-aos="fade-In">
+                       Soy profesor de Educación Física con una profunda vocación por el bienestar y el desarrollo integral de las personas a través del deporte y la actividad física. Actualmente trabajo en la Municipalidad de San Pedro, donde coordino programas destinados a adultos mayores, promoviendo la salud, la movilidad y la integración social mediante la actividad física adaptada.
+                        A lo largo del año, acompaño a mis alumnos y alumnas a competiciones en distintas localidades del país, brindándoles la oportunidad de crecer en lo deportivo y también de vivir experiencias enriquecedoras que fortalecen la confianza y la camaradería.
+
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label">Años de Experiencia</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Estudiantes Entrenados</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Torneos Organizados</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <img src="/public/profesor.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="logros" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Logros y Trabajos de mis Alumnos</h2>
+            <!-- Usando Bootstrap grid para mejor responsividad -->
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="achievement-card" data-aos="fade-right" >
+                        <div class="achievement-icon"><img src="public/logros1.jpg" alt="" srcset=""></div>
+                        <h3>Campeón en 3ra. Categoría</h3>
+                        <p>Circuito Provincial de Tenis de Mesa que organiza la Asociación Jujeña</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="achievement-card">
+                        <div class="achievement-icon"><img src="public/logros2.jpg" alt="" srcset=""></div>
+                        <h3>Juegos Evita</h3>
+                        <p>Juegos Nacionales Evita en la Ciudad de Mar del Plata.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="achievement-card" data-aos="fade-left">
+                        <div class="achievement-icon"><img src="public/logros3.jpg" alt="" srcset=""></div>
+                        <h3>Torneo Regional</h3>
+                        <p>Torneo Regional Jujuy en la Localidad del Carmen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Galería de Entrenamientos</h2>
+            <!-- Reemplazando carrusel personalizado con Bootstrap Carousel -->
+            <div id="trainingCarousel" class="carousel slide" data-bs-ride="carousel">
+    
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/public/carrusel1.jpg" class="d-block w-100" alt="Entrenamiento individual">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Entrenamiento Técnico Individual</h5>
+                            <p>Sesiones personalizadas para perfeccionar tu técnica</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/public/carrusel2.jpg" class="d-block w-100" alt="Clase grupal">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Clases Grupales Dinámicas</h5>
+                            <p>Aprende junto a otros estudiantes en un ambiente motivador</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/public/carrusel3.jpg" class="d-block w-100" alt="Torneo">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Participación en Torneos</h5>
+                            <p>Prepárate para competir en torneos locales y regionales</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/public/carrusel4.jpg" class="d-block w-100" alt="Corrección técnica">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Corrección de Técnica Personalizada</h5>
+                            <p>Análisis detallado y corrección de movimientos</p>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#trainingCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#trainingCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" ></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <!-- Usando Bootstrap grid para mejor layout responsive -->
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h3>¿Listo para comenzar?</h3>
+                        <p>Envíame tus consultas y te responderé a la brevedad. Ofrezco clases individuales y grupales adaptadas a tu nivel.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-icon">📧</span>
+                                <span>profesor.tenismesa@email.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <a href="https://wa.me/3888411832 " class="whatsapp-float" target="_blank">
+                                 <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">🏓</span>
+                                <span>CLASES DE LUNES A VIERNES  <br>
+                                         🏓SUM B° HORACIO GUZMAN </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form class="contact-form" data-aos="zoom-in"id="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="level" class="form-label">Nivel de Experiencia</label>
+                            <select class="form-select" id="level" name="level" required>
+                                <option value="">Selecciona tu nivel</option>
+                                <option value="principiante">Principiante</option>
+                                <option value="intermedio">Intermedio</option>
+                                <option value="avanzado">Avanzado</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Cuéntame sobre tus objetivos y disponibilidad..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 enviar">Enviar Consulta</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+                <div class="footer-bottom text-center mt-4 pt-4">
+                <p> 2025 Profesor de Tenis de Mesa. Todos los derechos reservados.</p>
+                </div>
+    </footer>
+
+    <!-- Agregando Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init(); // inicializa animaciones
+  </script>
+</body>
+</html>
